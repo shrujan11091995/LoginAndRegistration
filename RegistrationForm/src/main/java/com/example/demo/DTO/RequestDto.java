@@ -3,6 +3,7 @@ package com.example.demo.DTO;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -21,12 +22,9 @@ public class RequestDto {
 
 		@Email(message = "invalid email address")
 		private String email;
-
+		
 		@NotBlank(message = "password shouldn't be null or empty")
+		@Size(min=6, max=60, message = "password should be min 6")
 		private String password;
 		
-		
-
 	}
-
-

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.DTO.RequestDto;
 import com.example.demo.DTO.ResponseDto;
 import com.example.demo.EmployeeService.EmpService;
-import com.example.demo.Entity.Employee;
+import com.example.demo.Entity1.Employee;
 
 import jakarta.validation.Valid;
 
@@ -41,4 +41,5 @@ public class EmpController {
         
 		return ResponseEntity.ok(responseDto);
 	}
+	
 }

@@ -4,8 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.DTO.RequestDto;
-import com.example.demo.EmployeeRepository.EmpRepository;
-import com.example.demo.Entity.Employee;
+import com.example.demo.EmployeeRepository1.EmpRepository;
+import com.example.demo.Entity1.Employee;
 
 @Service
 public class EmpService {
